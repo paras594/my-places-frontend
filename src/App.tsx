@@ -1,5 +1,11 @@
+import { Outlet } from "react-router-dom";
+
 function App() {
-  return <button className="btn btn-primary">Primary</button>;
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 }
 
 export default App;
