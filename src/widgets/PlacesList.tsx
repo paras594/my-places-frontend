@@ -10,19 +10,6 @@ const PlacesList = () => {
         <PlacesListItem />
         <PlacesListItem />
         <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
-        <PlacesListItem />
       </div>
     </div>
   );

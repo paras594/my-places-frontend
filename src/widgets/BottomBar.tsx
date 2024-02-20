@@ -2,9 +2,13 @@ import { RiAddFill, RiListUnordered } from "react-icons/ri";
 import Container from "../components/Container";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 
-const BottomBar = () => {
+type Props = {
+  onAddLocation: () => void;
+};
+
+const BottomBar = ({ onAddLocation }: Props) => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 flex h-16 items-center border bg-white">
+    <div className="fixed bottom-0 left-0 right-0 flex h-16 items-center border-t bg-white">
       <Container className="flex items-center justify-between">
         <div className="flex gap-2">
           <button className="btn btn-square btn-ghost btn-sm text-lg">
@@ -25,7 +29,7 @@ const BottomBar = () => {
           </details>
         </div>
         <div>
-          <button className="btn btn-square text-2xl">
+          <button className="btn btn-square text-2xl" onClick={onAddLocation}>
             <RiAddFill />
           </button>
         </div>
